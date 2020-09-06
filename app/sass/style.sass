@@ -589,14 +589,23 @@ button
 	padding-bottom: 2.083vw
 	span 
 		color: $yellow
+.reviews__text--big
+	// font-size: 2vw
+	max-width: 51vw
 .reviews__author
 	text-align: center
 	font-size: 1.250vw
 	font-family: 'halyard-text-light-italic', sans-serif
 	font-style: italic
 	font-weight: 300
-	padding-bottom: 4vw
-
+	//padding-bottom: 4vw
+.reviews__tab-content .wr
+	height: 100% 
+	display: flex
+	flex-direction: column
+	align-items: center 
+	justify-content: center
+	height: 21vw
 //------end reviews style--------
 
 //------start footer style--------
@@ -1305,7 +1314,7 @@ button
 		height: 47.031vw
 .characteristics-tab-content-item
 	display: none
-.characteristics-tab-content-item:first-child 
+.characteristics-tab-content-item:first-child
 	display: block
 .characteristics
 	background: $blue
@@ -1381,7 +1390,7 @@ button
 
 //---------start mainfest style-------
 .page-main-screen--manifest
-	background: url('../img/manifest-bg.jpg')
+	background: $blue
 	background-size: cover
 
 .manifest--top
@@ -1537,7 +1546,7 @@ button
 	color: #fff
 .solution__tab-item
 	display: none
-.solution__tab-item:first-child 
+.solution__tab-item:first-child
 	display: block
 .solution__tab-item-text
 	width: 38.021vw
@@ -1550,6 +1559,12 @@ button
 	img 
 		width: 15.625vw
 		margin-top: 3.646vw
+		filter: grayscale(100%)
+.solution__tab-item--2,
+.solution__tab-item--3,
+.solution__tab-item--4
+	img 
+		width: 10vw
 .solution__tab-item-values
 	width: 50vw
 	margin-left: 4.167vw
@@ -1605,7 +1620,8 @@ button
 	width: 20%
 	text-align: center
 	img 
-		width: 3.854vw
+		max-width: 9vw
+		max-height: 5vw
 		margin-bottom: 2vw
 		margin-top: 2vw
 .solution-section-item
@@ -1758,6 +1774,22 @@ button
 .contact-item-link:hover 
 	color: inherit
 	text-decoration: underline
+.line-mobil
+	display: none
+.manifest__hide-content p.p-list
+	margin-bottom: 0
+	padding-left: 1.5vw
+	position: relative
+.manifest__hide-content p.p-list:before 
+	content: ''
+	position: absolute
+	height: 0.365vw
+	width: 0.365vw
+	background: #fff 
+	border-radius: 50% 
+	display: block
+	top: 0.75vw 
+	left: 0
 @import "media"
 
 
