@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="NAV_Main_Button_48px" data-name="NAV  Main Button 48px" transform="translate(48 48) rotate(180)">
+    <circle id="Эллипс_10" data-name="Эллипс 10" cx="24" cy="24" r="24" fill="#ffe604"/>
+    <g id="Сгруппировать_63" data-name="Сгруппировать 63" transform="translate(12.445 16.964)">
+      <line id="Линия_4" data-name="Линия 4" x2="22.555" transform="translate(0 7.518)" fill="none" stroke="#151325" stroke-linecap="round" stroke-width="3"/>
+      <line id="Линия_5" data-name="Линия 5" x2="22.555" transform="translate(0 15.036)" fill="none" stroke="#151325" stroke-linecap="round" stroke-width="3"/>
+      <line id="Линия_6" data-name="Линия 6" x2="22.555" fill="none" stroke="#151325" stroke-linecap="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

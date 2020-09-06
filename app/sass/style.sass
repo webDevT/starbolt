@@ -1,0 +1,1765 @@
+@import "vars"
+@import "fonts"
+
+//----start global style----
+body 
+	font-family: $hal-text
+	font-weight: 300
+	font-size: 1.563vw
+	background: #F8F8EE
+
+.container-fluid
+	width: 92.188vw
+	padding-left: 0 
+	padding-right: 0
+p 
+	color: $blue
+	margin-bottom: 0
+a,
+a:hover 
+	text-decoration: none
+ul 
+	padding-left: 0
+	margin: 0
+	list-style: none
+h1,
+h2 
+	font-size: 4.167vw
+	line-height: 4.271vw
+	font-family: 'halyard-display' , sans-serif
+	font-weight: 500
+	margin-bottom: 0
+h3 
+	font-size: 2.917vw
+	font-family: 'halyard-display' , sans-serif
+	font-weight: 500
+	margin-bottom: 0
+	line-height: 1
+.grey 
+	color: #96968D
+.button
+	font-family: $hal-text-bold
+	font-size: 0.938vw
+	font-weight: 700
+	color: $blue 
+	border: 1px solid $blue
+	width: 13.021vw
+	height: 3.125vw
+	border-radius: 2.083vw
+	display: flex 
+	justify-content: center 
+	align-items: center
+	//transition: all 0.5s
+.button:hover	
+	background: $blue
+	color: #fff
+.button:active,
+.button:focus	
+	color: $blue 
+	background: #fff
+.button--white
+	color: #fff 
+	border: 1px solid #fff
+.button--white:hover
+	background: #fff 
+	color: $blue 
+.button--white:active,
+.button--white:focus
+	background: transparent
+	color: #fff 
+	border: 1px solid #fff
+
+.button--large 
+	
+	width: 20.833vw
+.button--blue
+	background: $blue
+	color: #fff
+.button--blue:hover
+	background: #fff 
+	color: $blue
+	border: 1px solid #fff
+.button--blue:active,
+.button--blue:focus
+	background: $blue
+	color: #fff
+	border: 1px solid $blue
+input 
+	width: 100%
+	background: transparent
+	border: none
+	border-bottom: 1px solid #F8F8EE
+	font-size: 1.250vw
+	outline: none
+	color: #fff
+	padding: 0.521vw 0
+input::placeholder 
+	color: #fff
+input:focus::placeholder
+	color: transparent
+button
+	outline: none
+//---end global style------
+
+//---start header style----
+.header 
+	position: absolute
+	width: 100%
+	top: 0 
+	left: 0
+	padding-top: 2.656vw
+	z-index: 999
+	transition: all 0.5s
+	.container-fluid
+		display: flex
+		justify-content: space-between
+		align-items: center
+.header__text,
+.header__logo
+	img 
+		width: 100%
+.header__logo
+	width: 10.132vw
+.header__text a
+	color: $yellow
+	font-size: 1.3vw
+	font-weight: 700
+	letter-spacing: 0.2vw
+
+.header.sticky 
+	position: fixed
+	padding-top: 10px
+	padding-bottom: 10px
+.header.hide 
+	opacity: 0
+	position: fixed
+//----end header style-----
+
+//----start main-screen style---
+.main-screen
+	background: $blue
+	padding-top: 4.167vw
+	h1
+		text-align: center
+		color: $yellow
+		max-width: 71.771vw
+		margin: 0 auto
+		padding-top: 12vw
+		
+	img 
+		width: 100%
+		
+.main-screen-text
+	color: #fff
+	text-align: center
+	padding-top: 3vw
+	padding-bottom: 6vw
+	font-size: 1.3vw
+.slider__item
+	color: #fff
+	height: 30vw
+	overflow: hidden
+	display: flex 
+	justify-content: center 
+	align-items: center
+.slider-img-item
+	display: flex
+	margin: 0.703vw
+	overflow: hidden 
+	max-width: 100%
+	align-items: center
+	img 
+		max-width: 100%
+		transition: all .5s
+.main-text
+	height: 30vw
+	.main-text-wrap
+		position: fixed
+		left: 50%
+		transform: translateX(-50%)
+		width: 70vw
+		transition: all 0.5s
+		opacity: 1
+		z-index: 0
+	.main-text-wrap.fade 
+		opacity: 0
+	.main-text-wrap.none 
+		position: static
+
+
+	// img:hover 
+	// 	transform: scale(1.1)
+.main-screeen__images
+	position: relative 
+	z-index: 1 
+	background: $blue
+.slider-img-item--two-img
+	max-width: 100%
+	justify-content: space-between
+	display: flex
+	align-items: flex-start
+	flex-direction: row
+	overflow: hidden
+	margin: 0.703vw
+	height: 50%
+
+	div 
+		width: 50% 
+		overflow: hidden
+
+	img 
+		width: 100%
+
+
+	div:first-child 
+		margin-right: 0.711vw
+
+	div:last-child 
+		margin-left: 0.711vw
+.slider-wrapper 
+	position: relative
+	overflow: hidden
+.slider-top
+	position: absolute
+	z-index: 99
+	top: 0 
+	left: 0 
+	width: 100%
+	transform: translateY(-50%)
+	fill: $blue
+.slider-bottom 
+	position: absolute 
+	bottom: 0vw
+	left: 0 
+	width: 100%
+	transform: translateY(50%)
+.slider-img-item--first
+	margin-left: 0
+.slider-img-item--bottom
+	img 
+		position: relative 
+		top: 2.5vw
+.slider-img-item--last
+	margin-right: 0
+.slider-img-item-top
+	img 
+		position: relative 
+		top: -2.5vw
+.slider-img-item-two-top
+	height: 50% 
+	overflow: hidden
+	img 
+		top: 2vw 
+		position: relative
+.slider-img-item-two-bottom
+	height: 50% 
+	overflow: hidden
+	img 
+		top: -1vw
+		position: relative
+
+
+//----end main-screen style----
+
+//----start menu style--------
+.menu-btn 
+	position: fixed
+	top: 50%
+	left: 1.406vw
+	cursor: pointer
+	transition: all 0.3s
+	z-index: 9999
+	img 
+		width: 2.500vw
+		height: 2.500vw
+		transform: rotate(0deg)
+		transition: all 0.3s
+.menu-btn:hover img
+	transform: rotate(180deg)
+
+.menu
+	background: $yellow
+	position: fixed
+	left: 0
+	top: 0
+	height: 100%
+	z-index: 99999
+	width: 50vw
+	padding-top: 2.656vw
+	padding-left: 3.906vw
+	padding-bottom: 3.906vw
+	padding-right: 3.281vw
+	transform: translateX(-101%)
+	transition: all 0.5s
+.menu.active
+	transform: translateX(0%)
+.menu__header
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+.menu__logo,
+.menu__close
+	cursor: pointer
+	transition: all 0.3s
+.menu__close
+	position: relative
+	img 
+		position: relative
+		transform: rotate(0deg)
+		transition: all 0.3s
+.menu__close:hover img
+	transform: rotate(180deg)
+
+.menu__button
+	position: absolute
+	top: 50%
+	left: 1.406vw
+	transform: translateY(-50%)
+	cursor: pointer
+	transition: all 0.3s
+.menu__button:hover
+	transform: translateY(-50%) rotate(-180deg)
+.menu__content 
+	height: 100% 
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+.menu__soc-icon
+	display: flex
+	a
+		display: block 
+		margin-right: 1.042vw
+	svg
+		width: 2.500vw
+		height: 2.500vw
+	.icon-bg
+		fill: $blue
+		//transition: all 0.3s
+		stroke: $blue
+	.icon-color
+		fill: $yellow
+		//transition: all 0.3s
+.menu__soc-icon a:hover
+	.icon-bg
+		fill: transparent
+	.icon-color
+		fill: $blue
+.menu__soc-icon a:focus,
+.menu__soc-icon a:active
+	.icon-bg
+		fill: $blue
+	.icon-color
+		fill: $yellow
+.menu__footer
+	padding-left: 2.083vw
+	display: flex
+	justify-content: space-between
+	align-items: center
+	color: $blue
+.menu__leng
+	font-size: 1.250vw
+	text-transform: uppercase
+	font-family: $hal-display
+	font-weight: 600
+	display: flex
+	align-items: center
+	span 
+		margin-left: 1vw
+		margin-right: 1vw
+		position: relative 
+		top: -0.1vw
+		font-weight: 300
+	a 
+		color: $blue
+		font-weight: 300
+		width: 0.8vw
+		display: flex 
+		justify-content: center
+		align-items: center
+
+	a.active,
+	a:hover
+		font-weight: 600
+.menu__close,
+.menu__button
+	img
+		width: 2.5vw
+.menu__logo
+	img
+		width: 10.156vw
+.menu__items
+	padding-left: 2.083vw
+.menu__link
+	font-size: 2.917vw
+	color: $blue 
+	transition: all .3s
+	font-family: $hal-display
+	font-weight: 500
+.menu__link:hover
+	color: #fff
+//-----end menu style-------
+
+//-----start-video style----
+.video 
+	background: $blue 
+	padding: 5vw
+	position: relative 
+	z-index: 1
+	.container-fluid 
+		width: 88vw
+	h2 
+		color: $yellow
+		position: absolute 
+		top: 50%
+		left: 50% 
+		transform: translate(-50%, -50%)
+		text-align: center
+.video__bg 
+	width: 100%
+.video__wrapper 
+	position: relative
+.video__button
+	position: absolute
+	left: 50%
+	transform: translateX(-50%)
+	padding-top: 1.8vw
+	cursor: pointer
+	.triangle
+		fill: #f8f8ee
+		transition: all 0.3s
+	.elips 
+		stroke: #f8f8ee
+		transition: all 0.3s
+	svg
+		width: 4.167vw
+
+.video__button:hover 
+	.triangle
+		fill: $blue
+	.elips 
+		stroke: #f8f8ee
+		fill: #f8f8ee
+//-----end-video style------
+
+//-----start video modal-----
+.video-modal 
+	background: rgba(0, 0, 0, 0.8)
+	position: fixed 
+	top: 0 
+	left: 0 
+	width: 100%
+	height: 100%
+	display: none
+	z-index: 999
+	.video-modal__wrapper
+		display: flex 
+		justify-content: center
+		align-items: center
+		width: 100% 
+		height: 100%
+		
+	.iframe__wrapper,
+	iframe
+		width: 80vw
+		height: 40vw
+	.iframe__wrapper 
+		position: relative
+.close-video 
+	position: absolute
+	width: 2.5vw
+	height: 2.5vw
+	right: 0 
+	top: 0
+	transform: translateX(100%) translateY(-100%)
+	cursor: pointer
+//-----end video modal-----
+
+//------start about style--------
+.about__item 
+	display: flex
+.about-item-col 
+	width: 50%
+	min-height: 100%
+	display: flex 
+	flex-direction: column 
+	justify-content: center
+	img 
+		width: 100%
+.about__item-content
+	padding-left: 7.552vw
+	p 
+		max-width: 26vw
+		padding-top: 2vw
+	.button 
+		margin-top: 3.125vw
+.about__item--blue
+	background: $blue
+	h2 
+		color: $yellow
+	p 
+		color: #fff
+//------end about style----------
+
+//------start reviws style-------
+.reviews 
+	padding: 9.531vw 0
+	position: relative 
+	z-index: 1
+	padding-top: 5vw
+.partners-logo 
+	display: flex 
+	flex-wrap: wrap 
+	justify-content: center
+	max-width: 60vw
+	margin: 0 auto
+	margin-bottom: 4vw
+	.partner-logo 
+		width: 15% 
+		display: flex 
+		justify-content: center 
+		align-items: center
+		height: 8vw
+		img 
+			width: 70%
+
+.slider-nav
+	width: 29.167vw
+	margin: 0 auto
+	svg 
+		width: 75%
+		fill: #C6C6BC
+		display: block 
+		margin: 0 auto
+		height: auto
+
+	
+.reviews__tab
+	width: 100%
+	display: flex !important
+	justify-content: center 
+	align-items: center
+	cursor: pointer
+	padding-top: 1.667vw
+	position: relative
+	//top: -0.25vw
+	overflow: hidden
+	position: relative
+	height: 3vw
+
+	
+.reviews__tab:before 
+	content: ''
+	width: 100% 
+	height: 0.365vw
+	background: $blue
+	top: 0px
+	left: 0
+	position: absolute
+	transform: translateX(-100%)
+	transition: all 0.1s
+.reviews__tab:after 
+	content: ''
+	width: 100% 
+	height: 0.156vw
+	background: $blue
+	top: 0.1vw
+	left: 0
+	position: absolute
+	transform: translateX(0%)
+	transition: all 0.1s	
+.slider-nav 
+	.slick-current
+		svg 
+			fill: $blue
+.slider-nav 
+	.slick-current
+		.reviews__tab:before	
+			transform: translateX(0%)
+.reviews__tab-content
+	display: none
+.reviews__tab-content:first-child 
+	display: block
+.reviews__text
+	text-align: center
+	max-width: 43.750vw
+	font-size: 2.917vw
+	margin: 0 auto
+	line-height: 1
+	font-family: $hal-display
+	padding-bottom: 2.083vw
+	span 
+		color: $yellow
+.reviews__author
+	text-align: center
+	font-size: 1.250vw
+	font-family: 'halyard-text-light-italic', sans-serif
+	font-style: italic
+	font-weight: 300
+	padding-bottom: 4vw
+
+//------end reviews style--------
+
+//------start footer style--------
+.footer 
+	margin-top: 5.469vw
+	position: relative
+	background: $blue
+	padding-top: 3.906vw
+	color: #fff
+	.container-fluid 
+		width: 87vw
+.footer-top
+	width: 100%
+	position: absolute 
+	top: 0 
+	transform: translateY(-50%)
+	z-index: -1
+.footer__contacts
+	position: relative 
+.footer__logo 
+	padding-bottom: 4.063vw
+	img 
+		width: 13.021vw
+.footer__contacts
+	display: flex 
+	justify-content: space-between
+	padding-bottom: 3.281vw
+.footer__menu
+	display: flex
+	a 
+		display: block
+		color: #fff 
+		font-size: 1.250vw
+		margin-bottom: 0.3vw
+		transition: all 0.3s
+	a:hover 
+		font-weight: 600
+.footer__menu-col 
+	width: 14vw
+.footer__form-title
+	font-size: 1.250vw
+	padding-bottom: 1.146vw
+.footer__form
+	width: 34.948vw
+
+	form 
+		width: 100%
+		position: relative
+	input 
+		padding-right: 2.083vw
+	button 
+		background: transparent 
+		border: none	
+		position: absolute
+		right: 0 
+		top: 50% 
+		transform: translateY(-50%)	
+		cursor: pointer
+		outline: none
+		svg
+			width: 2.083vw
+			transition: all .3s
+		.svg-bg 
+			fill: #fff
+
+	button:hover 
+		svg 
+			transform: rotate(360deg)
+			.svg-bg 
+				fill: $yellow
+	button:focus,
+	button:active 
+		svg 
+			
+			.svg-bg 
+				fill: $yellow
+		
+.footer__soc-icon-wrapper
+	padding-top: 1.979vw
+.footer__soc-icon
+	display: flex
+	a
+		display: block 
+		margin-right: 1.042vw
+	svg
+		width: 2.500vw
+		height: 2.500vw
+	a .icon-bg,
+	a .icon-bg:focus
+		fill: #fff
+		//transition: all 0.3s
+		stroke: #fff
+	a .icon-color,
+	a .icon-color:focus
+		fill: $blue
+		//transition: all 0.3s
+.footer__soc-icon a:hover
+	.icon-bg
+		fill: $yellow
+		stroke: $yellow
+	.icon-color
+		fill: $blue
+.footer__soc-icon a:focus
+	.icon-bg
+		fill: #fff
+		stroke: #fff
+	.icon-color
+		fill: $blue
+.footer__bottom
+	padding: 2.083vw 0 
+	border-top: 1px solid #707070
+	.container-fluid 
+		display: flex
+	a 
+		color: #fff
+		font-size: 1.250vw
+		padding-right: 1.042vw
+		border-right: 1px solid #fff
+		padding-left: 1.042vw
+	a:first-child 
+		padding-left: 0
+	a:last-child 
+		border-right: none
+//------end footer style---------
+
+//-------start expirience style----
+.page-main-screen
+	background: url('../img/page-bg.jpg')
+	background-size: cover
+	background-position: center
+	padding-top: 18.854vw
+	padding-bottom: 18.229vw
+	position: relative
+	z-index: 2
+	h1 
+		color: $yellow
+		text-align: center
+		max-width: 66.823vw
+		margin: 0 auto
+	.button
+		margin: 0 auto
+		margin-top: 1.563vw
+		
+//-------end expirience style------
+
+//------start map section style-----
+.line-animation
+	stroke-dasharray: 300vw
+	stroke-dashoffset: 300vw
+	animation: animdash 3s
+	animation-fill-mode: forwards
+	animation-iteration-count: 1
+
+@keyframes animdash
+	to
+		stroke-dashoffset: 0vw
+
+.fade-animation
+	opacity: 0
+	animation: fade 2s
+	animation-fill-mode: forwards
+	animation-iteration-count: 1
+@keyframes fade 
+	0% 
+		opacity: 0
+	99.9% 
+		opacity: 0
+	100% 
+		opacity: 1
+.fade-animation2
+	opacity: 0
+	animation: fade2 2s
+	animation-fill-mode: forwards
+	animation-iteration-count: 1
+@keyframes fade2
+	0% 
+		opacity: 0
+	99.9% 
+		opacity: 0
+	100% 
+		opacity: 0
+.route3,
+.route2 
+	display: none
+.map-section
+	display: flex 
+	justify-content: space-between
+	background: $blue
+	min-height: 50vw
+	overflow: hidden
+.map 
+	width: 63vw
+	height: 60vw
+	overflow: hidden
+	display: flex 
+	align-items: center
+	position: absolute
+	right: 0
+	svg 
+		width: 100%
+		position: relative 
+		right: -7vw
+		
+.map-section
+	position: relative
+	//height: 50vw
+.map-section-top
+	width: 100%
+	position: absolute
+	transform: translateY(-50%)
+	z-index: 1
+.map-section__content
+	color: #fff
+	h3 
+		color: $yellow
+		margin-bottom: 2vw
+	.map-section__text 
+		color: #fff
+		max-width: 27vw
+	p
+		color: #fff
+	p.yellow 
+		color: $yellow
+.prod-card
+	display: flex	
+.map-section__content
+	width: 42vw
+	padding-top: 13.021vw
+	padding-left: 7.813vw
+.map-section-tab-content
+	display: none 
+	min-height: 10vw
+
+	.wrap 
+		min-height: 12vw
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+.services-product__images
+	//overflow: hidden
+	width: 50%
+.map-section-tab-content:first-child 
+	display: block
+.map-section-tabs
+	display: flex
+	align-items: flex-end
+	width: 29.688vw
+	border-top: 3px solid #fff
+	margin-top: 2vw
+	padding-bottom: 7.292vw
+.map-section-tab
+	width: 33.33%
+	display: flex
+	justify-content: center	
+	padding-top: 1.042vw
+	cursor: pointer
+	position: relative
+	top: -6px 	
+
+	
+
+	svg 
+		max-width: 4.688vw
+		height: 4vw
+		fill: #fff
+.map-section-tab.active svg
+	fill: $yellow
+.bike-color
+	fill: #f8f8ee
+.map-section-tab:hover
+	border-top: 9px solid #f8f8ee
+.map-section-tab.active
+	border-top: 9px solid $yellow
+
+	.bike-color 
+		fill: $yellow
+.map-tab-text
+	max-width: 20vw
+.map-dot1,
+.map-dot2,
+.map-dot3.active,
+.map-dot5.active
+	fill: #f8f8ee
+
+.map-dot1.active,
+.map-dot2.active,
+.map-dot3,
+.map-dot5
+	fill: $yellow
+
+.route2.active,
+.route3.active,
+.route1.active,
+
+	display: block
+//------end map section style-----		
+
+//------start expirience style----
+.expirience
+	
+
+.expirience-img
+	width: 100%
+.expirience__item
+	padding-left: 7.813vw
+	padding-right: 7.813vw
+	display: flex
+	justify-content: space-between 
+.expirience__item--left
+	align-items: flex-end
+	position: relative 
+	top: -6.771vw
+	.expirience__item__img-wrapper
+		width: 42.188vw
+		display: flex
+		justify-content: space-between
+		img 
+			width: 49%
+	.expirience__item-content
+		//padding-left: 7.813vw
+		max-width: 33vw
+		h3 
+			color: #151325
+.expirience__item-text
+	font-size: 2.917vw
+	font-family: 'halyard-display' , sans-serif
+	font-weight: 500
+	line-height: 1
+	color: #96968D
+.expirience__item--right
+	padding-right: 0
+	img 
+		width: 50vw
+	h3 
+		max-width: 30vw
+	.expirience__item-text
+		max-width: 30vw
+.expirience-review
+	background: $blue
+	padding-top: 9.583vw
+	position: relative
+	padding-bottom: 9.583vw
+	//z-index: -1
+	border-bottom: 1px solid $blue
+	color: #fff
+	.reviews__tabs
+		border-color: #F8F8EE
+	.reviews__tab:before
+		background: #F8F8EE
+	.reviews__tab:after
+		background: #F8F8EE
+	.reviews__tab
+		color: #fff
+		cursor: pointer
+
+
+.footer--blue:after 
+	content: ''
+	height: 5.469vw
+	background: $blue
+	width: 100%
+	position: absolute
+	top: 0px
+	z-index: -2
+	transform: translateY(-100%)	
+.expirience-review--white
+	background: transparent
+	.reviews__text,
+	.reviews__author
+		color: $blue
+	.reviews__tab:before
+		background: $blue
+	.reviews__tab:after
+		background: $blue
+	.reviews__tabs
+		border-color: $blue
+
+//------end expirience style------
+.services-list
+	padding-bottom: 10vw
+//------start services page-----
+.page-main-screen--services
+	background: $blue
+	background-size: cover
+	background-repeat: no-repeat
+	
+	h1 
+		max-width: 78.542vw
+.title-section
+	background: $blue
+	text-align: center
+	padding: 11.458vw 0
+	position: relative
+	overflow: hidden
+	.title-section--top 
+		width: 100%
+		transform: translateY(-50%)
+		z-index: 1
+		position: absolute 
+		top: 0 
+		left: 0
+	.title-section--bottom
+		width: 100%
+		transform: translateY(50%)
+		z-index: 4
+		position: absolute 
+		bottom: 0 
+		left: 0
+
+	.container-fluid
+		display: flex 
+		align-items: center 
+		justify-content: center
+		h3 
+			color: $yellow
+			max-width: 48vw
+.services-product
+	.container-fluid
+		padding-left: 3.906vw
+		padding-right: 3.906vw
+	.map-section-tab .bike-color
+		fill: #C6C6BC
+	.map-section-tab.active .bike-color
+		fill: $blue
+	.map-section-tab:hover
+		border-color: transparent
+	.map-section-tab.active
+		border-color: $blue
+	.map-section-tabs
+		border-color: $blue
+.product-section-tab-content 
+	display: flex
+.product-section-tab-content
+	display: flex 
+	justify-content: center
+	img
+		max-width: 44.635vw
+		height: 35.729vw
+.services-product__text-wrapper
+	width: 50%
+	display: flex
+	flex-direction: column
+	justify-content: center
+	padding-bottom: 12.917vw
+	.services-product__text
+		max-width: 25.156vw
+		margin: 0 auto
+.product-section-tab-img
+	width: 100%
+
+.product-section-tab-wrapper
+	width: 100%
+	display: flex
+	justify-content: center
+	padding-bottom:
+.services-product__text p
+	margin-top: 0.781vw
+	margin-bottom: 2.604vw
+	color: #96968D
+.services-product
+	position: relative
+.services-list
+	.container-fluid 
+		padding-left: 3.906vw
+		padding-right: 3.906vw
+
+.services-product:before 
+	content: ''
+	width: 100%
+	height: 1px 
+	background: #C6C6BC
+	position: absolute 
+	bottom: 0
+	transform: rotate(-3deg)
+.services-list
+	padding-top: 10.417vw
+	h3 
+		max-width: 50vw
+		margin-bottom: 1.146vw
+.services-list__header
+	padding-bottom: 4.427vw
+	p 
+		max-width: 40vw
+
+.services-item__text	
+	font-size: 1.250vw
+.services-items
+	display: flex
+.services-item
+	width: 25%
+	padding-right: 2.396vw
+	img 
+		width: 4.688vw
+		height: 4.688vw
+		margin-bottom: 2.604vw
+	p
+		margin-bottom: 0.2vw
+
+//------end services page------
+.phones-section
+	padding-bottom: 4.688vw
+	.container-fluid
+		padding-left: 3.906vw
+		padding-right: 3.906vw
+
+	.phones-section-header
+		background: url('../img/bg.png')
+		background-size: 100%
+		padding-top: 5.7vw
+		padding-bottom: 6.5vw
+		background-repeat: no-repeat
+		img 
+			width: 2.627vw
+	h3 
+		color: $yellow
+		max-width: 40vw
+		margin-top: 2vw
+.phones-section__content
+	.container-fluid
+		display: flex
+		align-items: flex-start
+.phones-section__text,
+.phones-section__img
+	width: 50%
+	display: flex 
+	justify-content: center 
+	align-items: flex-start
+	img 
+		width: 27.083vw
+		margin-top: -22vw
+.phones-section__text
+	justify-content: flex-start
+	padding-top: 4vw
+	p
+		width: 100%
+.phones-section__img
+	img 
+
+.safety
+	background: $blue	
+	padding-top: 8.490vw
+.safety
+	.container-fluid 
+		display: flex	
+.safety__item
+	width: 50% 
+	color: #fff 
+	text-align: center
+	h3 
+		color: $yellow
+		margin-bottom: 1vw
+
+	p 
+		color: #fff
+		max-width: 35vw
+		margin: 0 auto
+.safety__item
+	padding-bottom: 2.083vw
+
+.safety__items-list
+	display: flex
+.safety__items-col
+	width: 50%
+	display: flex 
+	flex-direction: column 
+	align-items: center
+	padding-bottom: 2.083vw
+	padding-top: 2.083vw
+	img 
+		max-width: 6.042vw
+		max-height: 7.031vw
+	p 
+		margin-top: 2.083vw
+.safety__items-col-lg
+	padding-bottom: 2.083vw
+	padding-top: 4.6vw
+	p 
+		margin-top: 3.9vw
+	img 
+		max-width: 23.438vw
+
+//----------start vechiles style-------
+.page-main-screen--vechiles
+	background: url('../img/vechiles-bg.jpg')
+	background-size: cover
+	h1 
+		max-width: 50vw
+.vechile
+	overflow: hidden
+	.container-fluid 
+		padding-left: 3.906vw
+		padding-right: 3.906vw
+
+.vechile--top
+	transform: translateY(-50%)
+	width: 100%
+	height: 12vw
+.vechile-item
+	display: flex
+	align-items: center
+	justify-content: space-between
+.vechile-item__img-scooter
+	img 
+		width: 39.688vw
+		height: 43.646vw
+.zoom
+	display: inline-block
+	position: relative
+.zoom img
+	display: block
+.vechile-item__content
+	width: 24.115vw
+	h2 
+		margin-bottom: 1vw
+.vechile-list-item
+	border-top: 1px solid #C6C6BC
+	padding-top: 1.042vw
+	padding-bottom: 1.042vw
+	font-size: 1.250vw
+
+.vechile__list
+	padding-top: 2.042vw
+.vechile-list-item:last-child
+	//border-bottom: 1px solid #C6C6BC
+
+.add-button 
+	
+	cursor: pointer 
+	margin-right: 1vw
+	img 
+		width: 2.5vw
+		height: 2.5vw
+		transition: all .3s
+.add-btn-wrapper
+	margin-top: 2.604vw
+	display: flex
+	align-items: center
+	font-size: 1vw
+	cursor: pointer
+	span 
+		text-decoration: underline
+.add-btn-wrapper:hover .add-button
+	img 
+		transform: rotate(180deg)
+.add-button.active 
+	img
+		transform: rotate(45deg)
+.product-details__item
+	width: 19.480vw
+	text-align: center
+	margin-bottom: 7.552vw
+.product-details__item-img
+	height:	19.480vw
+	display: flex
+	justify-content: center 
+	align-items: center 
+	img 
+		max-width: 80%
+		max-height: 80%
+.product-details__list
+	display: flex 
+	justify-content: center
+	padding-top: 2.083vw
+.safe-text
+	display: flex 
+	align-items: center
+	font-size: 1.250vw
+	justify-content: center
+	img 
+		width: 1.406vw
+		height: 1.406vw
+		margin-right: 0.417vw
+.product-details__text-item-text
+	font-size: 1.250vw
+	max-width: 82%
+	
+.product-details__text-item
+	margin-top: 0.5vw
+	width: 25%
+	margin-bottom: 7.813vw
+	
+.product-details__text-list
+	display: flex
+.product-details
+	display: none
+
+.vechile-item-wrapper:before
+	content: ''
+	width: 100%
+	height: 1px
+	background: #C6C6BC
+	position: absolute
+	bottom: 0
+	left: 0
+	transform: rotate(-3deg)
+.vechile-item-wrapper
+	position: relative
+	margin-bottom: 8vw
+.vechile-item__img-bike
+	img 
+		width: 58.073vw
+		height: 46.458vw
+.vechile-item__img-scooter2
+	img
+		width: 59.427vw
+		height: 47.031vw
+.characteristics-tab-content-item
+	display: none
+.characteristics-tab-content-item:first-child 
+	display: block
+.characteristics
+	background: $blue
+	position: relative
+	padding: 6.771vw 0
+	color: #F8F8EE
+	.button--yellow 
+		margin: 0 auto
+		margin-top: 3.125vw
+	h3 
+		color: $yellow 
+		text-align: center
+.characteristics-top
+	width: 100%
+	transform: translateY(-50%)
+	position: absolute 
+	top: 0 
+	left: 0
+	z-index: -1
+.characteristics-bottom
+	width: 100%
+	transform: translateY(50%)
+	position: absolute 
+	bottom: 0
+	left: 0
+	z-index: -1
+.vechile-item-wrapper:before 
+	display: none
+.characteristics__content
+	width: 63.385vw
+	margin: 0 auto
+.characteristics-tabs
+	display: flex
+	justify-content: center
+	padding-top: 3.125vw
+	padding-bottom: 2.083vw
+.characteristics-tab
+	cursor: pointer
+	width: 10.417vw
+	display: flex 
+	justify-content: center
+	p 
+		
+		color: #707070
+.characteristics-tab.active 
+	p
+		font-weight: 600
+		text-decoration: underline
+		color: #F8F8EE
+.characteristics-tab-row
+	width: 100%
+	display: flex
+.characteristics-tab-col
+	width: 50%
+	border-top: 1px solid #272744
+	border-bottom: 1px solid #272744
+	padding: 1.302vw 1.042vw
+	font-size: 1.250vw
+.button--yellow
+	background: $yellow
+	
+.button--yellow:hover 
+	background: #fff
+	color: $blue
+.button--yellow:active,
+.button--yellow:focus
+	outline: none 
+
+	background: $yellow
+.characteristics-tab-col.yellow
+	color: $yellow
+//---------start vechiles style-------
+
+//---------start mainfest style-------
+.page-main-screen--manifest
+	background: url('../img/manifest-bg.jpg')
+	background-size: cover
+
+.manifest--top
+	position: absolute
+	transform: translateY(-50%)
+	width: 100% 
+	left: 0
+	z-index: 1
+.manifest
+	background: $blue
+	padding-top: 0
+	position: relative
+	overflow: hidden
+
+.manifest-row
+	display: flex
+	position: relative
+.manifest-row:nth-child(even)
+	flex-direction: row-reverse
+
+.manifest-col
+	width: 50%
+	display: flex 
+	align-items: center
+
+	img 
+		width: 100%
+	h3 
+		color: $yellow
+		margin-bottom: 2.604vw
+	p 
+		color: #fff	
+.manifest__content
+	padding-left: 7.813vw
+	padding-right: 7.813vw
+.manifest__btn
+	position: absolute
+	top: 50% 
+	left: 50%
+	transform: translate(-50%, -50%)
+	cursor: pointer
+	img 
+		width: 2.5vw
+		height: 2.5vw
+		transition: all .5s
+.manifest__btn:hover
+	img 
+		transform: rotate(180deg)
+.manifest__btn.active
+	img
+		transform: rotate(45deg)
+
+.manifest__hide-content
+	display: none
+	p
+		margin-bottom: 2vw
+		font-size: 1.250vw
+		span 
+			font-weight: bold
+.manifest-row.active
+	.manifest__hide-content
+		display: block
+	.manifest-show-content
+		display: none
+.on 
+	overflow: hidden
+	h2 
+		padding-bottom: 2.969vw
+	.manifest--top
+		z-index: -1
+.on-content
+	width: 32.396vw
+	text-align: center 
+	margin: 0 auto
+	padding-top: 10.417vw
+	padding-bottom: 8vw
+	p 
+		margin-bottom: 2.604vw
+	.button
+		margin: 0 auto
+
+//---------end manifest style-----------
+
+//------start contact style-------
+.contact
+	background: $blue
+	padding-top: 11.979vw
+	padding-bottom: 9vw
+	.button
+		margin-top: 1.823vw
+		cursor: pointer
+	input 
+		margin-top: 1.042vw
+	input:first-child 
+		margin-top: 0
+	h1 
+		color: $yellow
+		padding-left: 4.167vw
+		margin-bottom: 3.906vw
+.contact__row
+	display: flex 
+	justify-content: space-between
+.contact__content,
+.contact-form
+	width: 50%
+	padding: 0 4.167vw
+	color: #F8F8EE
+	p
+		color: #F8F8EE
+.sub-title
+	margin-bottom: 1.979vw
+.contact__text
+	font-size: 1.250vw
+.contact__text--margin
+	margin-bottom: 3.646vw
+//------end conact style--------
+
+//-------start solution--------
+.page-main-screen--solution
+	background: url('../img/solution-bg.jpg')
+	background-size: cover
+	h1 
+		max-width: 56vw
+.title-section--solution
+	.container-fluid 
+		flex-direction: column
+	p 
+		color: #fff
+		margin-top: 1vw
+.solution__tabs
+	display: flex
+	padding-bottom: 8.333vw
+.solution-tab
+	width: 25%
+	position: relative
+	img 
+		width: 100%
+	.button 
+		position: absolute 
+		bottom: 0 
+		left: 50% 
+		transform: translate(-50%, 50%)
+		cursor: pointer
+.solution-tab.active, 
+.solution-tab:hover
+	.button 
+		background: $yellow 
+		color: $blue
+		border: 1px solid $yellow
+.solution-tab:focus,
+.solution-tab:active	
+	background: $blue 
+	color: #fff
+.solution__tab-item
+	display: none
+.solution__tab-item:first-child 
+	display: block
+.solution__tab-item-text
+	width: 38.021vw
+	margin-left: 7.813vw
+	margin-right: 4.167vw
+	h3 
+		margin-bottom: 2.344vw
+	p 
+		font-size: 1.250vw
+	img 
+		width: 15.625vw
+		margin-top: 3.646vw
+.solution__tab-item-values
+	width: 50vw
+	margin-left: 4.167vw
+.solution__tab-item-wrapper
+	display: flex
+.solution__tab-item-values-row
+	margin-bottom: 4.167vw
+.solution__tab-item-values-title
+	border-bottom: 1px solid $blue
+.solution__tab-item-val
+	font-size: 4.167vw
+	line-height: 1
+.solution__tab-item-values-item
+	font-size: 1.250vw
+	width: 13.417vw
+	margin-top: 1.979vw
+.solution__tab-item-values-items
+	display: flex
+.solution__tab-item-val
+	display: flex
+.solution
+	padding-bottom: 10vw
+.sulution-table
+	margin-top: 5.208vw
+	.characteristics-tab-col
+		width: 33.3%
+		font-size: 1.250vw
+.sulution-col--border
+	border-left: 1px solid $yellow
+	border-right: 1px solid $yellow
+.sulution-col
+	display: flex 
+	justify-content: center 
+	align-items: center
+	img 
+		width: 2.500vw
+		height: 2.500vw
+.sulution__content
+	width: 76.563vw
+.characteristics-tab-row--last .characteristics-tab-col
+	border-bottom: none
+.solution-col--center
+	text-align: center
+.solution-section 
+	padding: 10.417vw 0
+	h3 
+		text-align: center
+		margin-bottom: 4.167vw
+.solution-section-row
+	display: flex
+	justify-content: center
+.solution-section-item
+	width: 20%
+	text-align: center
+	img 
+		width: 3.854vw
+		margin-bottom: 2vw
+		margin-top: 2vw
+.solution-section-item
+	margin-bottom: 4.688vw
+	p.grey 
+		width: 90%
+		margin: 0 auto
+.solution-section
+	.container-fluid
+		padding: 0 3.906vw
+.solution-section-item__top-title
+	font-style: italic
+	min-height: 2.6vw
+	font-weight: 300
+.line
+	position: absolute 
+	top: 50%
+	right: 0
+	transform: translate(50%, -50%)
+	img
+		width: 9.375vw
+.line2
+	position: absolute 
+	top: 50%
+	right: 100%
+	transform: translate(50%, -50%)
+	img
+		width: 9.375vw
+.solution-section-item__img
+	position: relative
+.solution-section-item--last
+	.line 
+		display: none
+.solution-section-item--left 
+	.line 
+		right: 100%
+//-------end solution--------
+
+.main-screeen__images.active
+	.slider-img-item-two-top
+		position: relative 
+		transform: translateX(-3%)
+		transition: all .5s
+	.slider-img-item-top
+
+		transform: translateY(-6%)
+		transition: all .5s
+		img 
+			transform: scale(1.05)
+	.img1 
+		position: relative 
+		transform: scale(0.95)
+		transition: all .5s
+
+	.img3 
+		transform: translateX(2%) 
+			
+	.img10
+		transform: translateY(8%) scale(0.95)
+		transition: all .5s 
+	.img12
+		transform: scale(1.1) translateX(-3%)
+	.img15
+		transform: scale(1.3)
+	.img5 
+		img 
+			transform: scale(1.4)
+			transition: all 0.5s
+		.img16
+			transform: scale(0.9) translateY(-4%) translateX(4%)
+
+.vechile-item__img
+	position: relative
+.product-price
+	position: absolute
+	right: 0 
+	bottom: 0
+	font-size: 2vw
+	color: $blue
+	transform: translateY(-50%)
+	span 
+		font-weight: bold
+		color: $blue
+.product-price--left
+	position: absolute
+	left: 0 
+	bottom: 0
+	font-size: 2vw
+	color: $blue
+	transform: translateY(-50%)
+	span 
+		font-weight: bold
+		color: $blue
+
+.mention-legal
+	padding-top: 10vw
+	p 
+		padding-bottom: 1vw
+		span 
+			text-decoration: underline
+	h3 
+		text-align: center
+	.center 
+		text-align: center
+		margin-bottom: 3vw
+	.margin 
+		margin-top: 3vw
+.mention-sub-title
+	font-weight: bold
+.mention-sub-title
+	padding-top: 1.5vw
+	padding-bottom: 1vw
+		
+.phone-section-logos
+	display: flex
+	align-items: center
+	//position: absolute
+	left: -1vw
+	bottom: -1vw
+	//transform: translateX(-65%)
+	img 
+		width: 8vw
+		height: auto
+
+		margin-top: 1vw
+.phones-section__text
+	display: block
+	padding-top: 6vw
+.phones-section__img
+	position: relative
+.mobil-img
+	display: none
+.mention-legals
+	width: 65vw
+.contact__text-width
+	max-width: 75%
+.button--contact
+	padding: 0
+	width: 8.333vw
+	height: 2.5vw
+	border: none
+.partners-logo .partner-logo
+	img 
+		filter: grayscale(100%)
+.reviews--logos
+	padding-bottom: 3vw
+.contact-item-link
+	text-decoration: underline
+	font-size: 0.938vw
+.contact-item-link:hover 
+	color: inherit
+	text-decoration: underline
+@import "media"
+
+
+
+

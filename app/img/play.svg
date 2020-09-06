@@ -1,0 +1,7 @@
+<svg id="Button_Play" data-name="Button Play" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="Эллипс_12" data-name="Эллипс 12" fill="none" stroke="#f8f8ee" stroke-width="4">
+    <circle cx="40" cy="40" r="40" stroke="none"/>
+    <circle cx="40" cy="40" r="38" fill="none"/>
+  </g>
+  <path id="Многоугольник_1" data-name="Многоугольник 1" d="M17.273,0,34.545,30H0Z" transform="translate(58 23) rotate(90)" fill="#f8f8ee"/>
+</svg>
