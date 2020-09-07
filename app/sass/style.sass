@@ -303,13 +303,20 @@ button
 	transition: all 0.3s
 .menu__close
 	position: relative
-	img 
+	svg 
 		position: relative
 		transform: rotate(0deg)
 		transition: all 0.3s
-.menu__close:hover img
+.close-stroke
+	stroke: $yellow
+.close-circle
+	fill: $blue
+.menu__close:hover svg
 	transform: rotate(180deg)
-
+	.close-stroke
+		stroke: $blue
+	.close-circle
+		fill: #fff
 .menu__button
 	position: absolute
 	top: 50%
@@ -341,7 +348,8 @@ button
 		//transition: all 0.3s
 .menu__soc-icon a:hover
 	.icon-bg
-		fill: transparent
+		fill: #fff
+		stroke: #fff
 	.icon-color
 		fill: $blue
 .menu__soc-icon a:focus,
@@ -662,10 +670,11 @@ button
 		border: none	
 		position: absolute
 		right: 0 
-		top: 50% 
+		top: 45% 
 		transform: translateY(-50%)	
 		cursor: pointer
 		outline: none
+		padding-right: 0
 		svg
 			width: 2.083vw
 			transition: all .3s
@@ -788,6 +797,7 @@ button
 		opacity: 0
 	100% 
 		opacity: 0
+
 .route3,
 .route2 
 	display: none
@@ -809,7 +819,7 @@ button
 		width: 100%
 		position: relative 
 		right: -7vw
-		
+
 .map-section
 	position: relative
 	//height: 50vw
@@ -865,9 +875,6 @@ button
 	cursor: pointer
 	position: relative
 	top: -6px 	
-
-	
-
 	svg 
 		max-width: 4.688vw
 		height: 4vw
@@ -896,12 +903,14 @@ button
 .map-dot3,
 .map-dot5
 	fill: $yellow
-
+.dash1 
+	display: none
 .route2.active,
 .route3.active,
 .route1.active,
 
 	display: block
+
 //------end map section style-----		
 
 //------start expirience style----
@@ -1056,6 +1065,8 @@ button
 		margin: 0 auto
 .product-section-tab-img
 	width: 100%
+	display: flex 
+	justify-content: center
 
 .product-section-tab-wrapper
 	width: 100%
@@ -1148,6 +1159,7 @@ button
 .safety
 	background: $blue	
 	padding-top: 8.490vw
+	padding-bottom: 6.4vw
 .safety
 	.container-fluid 
 		display: flex	
@@ -1168,6 +1180,10 @@ button
 
 .safety__items-list
 	display: flex
+.safety__items-list
+	padding-top: 2.7vw
+.safety__items-list--2
+	padding-top: 0vw
 .safety__items-col
 	width: 50%
 	display: flex 
@@ -1182,11 +1198,15 @@ button
 		margin-top: 2.083vw
 .safety__items-col-lg
 	padding-bottom: 2.083vw
-	padding-top: 4.6vw
+	padding-top: 5.6vw
 	p 
 		margin-top: 3.9vw
 	img 
 		max-width: 23.438vw
+.safety__item
+	display: flex
+	flex-direction: column
+	justify-content: space-between
 
 //----------start vechiles style-------
 .page-main-screen--vechiles
@@ -1481,7 +1501,7 @@ button
 	padding-top: 11.979vw
 	padding-bottom: 9vw
 	.button
-		margin-top: 1.823vw
+		margin-top: 3.5vw
 		cursor: pointer
 	input 
 		margin-top: 1.042vw
@@ -1793,6 +1813,8 @@ button
 	left: 0
 .expirience-review--white
 	border-bottom: none
+.button--blue--yellow:hover 
+	background: $yellow
 @import "media"
 
 

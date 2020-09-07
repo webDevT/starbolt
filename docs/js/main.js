@@ -168,17 +168,23 @@ $('.map-section-tab--scooter').click(function(){
   $('.white-route1').removeClass('fade-animation2');
   $('.map-dot5').removeClass('active');
   $('.map-dot3').removeClass('active');
+  $('.dash1').fadeIn();
+  $('.dash2').fadeOut();
+  $('.dash3').fadeIn();
 
   $('.route3').removeClass('active');
 });
 $('.map-section-tab--scooter2').click(function(){
   $('.route2').removeClass('active');
   $('.route3').addClass('active');
+  $('.dash3').fadeOut();
    $('.route1').hide();
    $('.map-dot2').addClass('active');
   $('.map-dot3').addClass('active');
   $('.map-dot5').addClass('active');
   $('.map-dot1').removeClass('active');
+  $('.dash1').fadeIn();
+   $('.dash2').fadeIn();
   
 
 });
@@ -186,10 +192,13 @@ $('.map-section-tab--bike').click(function(){
   $('.route2').removeClass('active');
   $('.route3').removeClass('active');
   $('.route1').show();
+  $('.dash1').fadeOut();
   $('.map-dot1').removeClass('active');
   $('.map-dot5').removeClass('active');
   $('.map-dot3').removeClass('active');
   $('.map-dot2').removeClass('active');
+  $('.dash3').fadeIn();
+  $('.dash2').fadeIn();
 
 });
 
