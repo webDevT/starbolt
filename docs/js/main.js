@@ -136,13 +136,6 @@ $('.slider-nav').slick({
 });
 // end slider
 
-//-----start reviews tab------
-// $(".reviews__tab").click(function() {
-//   $(".reviews__tab").removeClass("active").eq($(this).index()).addClass("active");
-//   $(".reviews__tab-content").hide().eq($(this).index()).fadeIn(800)
-// }).eq(0).addClass("active");
-//-----end reviews tab--------
-
 //-----start map tab------
 $(".map-section-tab").click(function() {
   $(".map-section-tab").removeClass("active").eq($(this).index()).addClass("active");
@@ -186,7 +179,6 @@ $('.map-section-tab--scooter2').click(function(){
   $('.dash1').fadeIn();
    $('.dash2').fadeIn();
   
-
 });
 $('.map-section-tab--bike').click(function(){
   $('.route2').removeClass('active');
@@ -212,49 +204,7 @@ $('.manifest__btn').click(function(){
   $(this).parent().toggleClass('active')
  
 });
-
-// var params = {
-//   count: $(".reviews__tab-content").length,
-//   now: 0
-// }
-
-// function set_active() {
-//   if(params.now == params.count) {
-//     params.now = 0;
-//   }
-//   $(".reviews__tab-content").hide();
-//   $(".reviews__tab-content[data-id=\"" + params.now + "\"]").fadeIn();
-//   params.now++;
-// }
-// set_active();
-
-// setInterval(set_active, 6000);
-
-
-
-
-
-// var params2 = {
-//   count: $(".reviews__tab").length,
-//   now: 0
-// }
-
-// function set_active2() {
-//   if(params2.now == params2.count) {
-//     params2.now = 0;
-//   }
-//   $(".reviews__tab").removeClass('active');
-//   $(".reviews__tab[data-id=\"" + params2.now + "\"]").addClass('active');
-//   params2.now++;
-// }
-// set_active2();
-
-// setInterval(set_active2, 6000);
-
-
-
  });
-
 
 
 jQuery(function($){
@@ -280,9 +230,6 @@ $(document).on('click', '.video__button', function() {
     src = $video2.attr('src');
  
   $video2.attr('src', src + '&autoplay=1');
-
-
-
 
 });
 
@@ -314,21 +261,6 @@ else{
 $('.header').removeClass("hide");
 }
 });
-// var maintext = $('.main-text-wrap'),
-//   scrollPrevs = 0;
-
-// $(window).scroll(function() {
-//   var scrolleds = $(window).scrollTop();
- 
-//   if ( scrolleds > 100 && scrolleds > scrollPrevs ) {
-//     maintext.addClass('fade');
-//   } else {
-//     maintext.removeClass('fade');
-//   }
-//   scrollPrevs = scrolleds;
-// });
-
-
 
 var header = $('.header'),
   scrollPrev = 0;
@@ -345,15 +277,6 @@ $(window).scroll(function() {
   scrollPrev = scrolled;
 });
 
-
-// $(window).scroll(function() {
-// if ($(this).scrollTop() > 10){
-// $('.main-screeen__images').addClass("active");
-// }
-// else{
-// $('.main-screeen__images').removeClass("active");
-// }
-// });
 //-------end sticky header--------
 
 $(document).ready(function () {
@@ -361,12 +284,12 @@ $(document).ready(function () {
     var show = true;
     var countbox = ".benefits__inner";
     $(window).on("scroll load resize", function () {
-        if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
-        var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
-        var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
-        var w_height = $(window).height(); // Высота окна браузера
-        var d_height = $(document).height(); // Высота всего документа
-        var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+        if (!show) return false;
+        var w_top = $(window).scrollTop(); 
+        var e_top = $(countbox).offset().top; 
+        var w_height = $(window).height();
+        var d_height = $(document).height(); 
+        var e_height = $(countbox).outerHeight();
         if (w_top + 500 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
             $('.benefits__number').css('opacity', '1');
             $('.benefits__number').spincrement({
@@ -384,13 +307,12 @@ $(document).ready(function () {
 
     var show = true;
     var countbox = ".benefits__inner";
-    $('.solution-tab').on("click", function () {
-        //if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
-        var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
-        var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
-        var w_height = $(window).height(); // Высота окна браузера
-        var d_height = $(document).height(); // Высота всего документа
-        var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+    $('.solution-tab').on("click", function () {     
+        var w_top = $(window).scrollTop(); 
+        var e_top = $(countbox).offset().top; 
+        var w_height = $(window).height(); 
+        var d_height = $(document).height(); 
+        var e_height = $(countbox).outerHeight(); 
         if (w_top + 500 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
             $('.benefits__number').css('opacity', '1');
             $('.benefits__number').spincrement({
